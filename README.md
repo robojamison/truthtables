@@ -14,7 +14,7 @@ This is read as "<em>p</em> implies <em>q</em>", where <em>p</em> and <em>q</em>
 know what they are or how they interact with each other, but we know that if <em>p</em> happens then <em>q</em> must 
 also happen by the logical statement given above.
 
-Logical statements can contain many different types of operators. The most common ones are as follows:
+Logical statements can contain many different types of operators.
 
 | Symbol | Text | Meaning | Example                                                                  |
 | ------ | ---- | ------- | ------------------------------------------------------------------------ |
@@ -30,39 +30,43 @@ Those interested in learning more about formal logic and its uses are encouraged
 ## Downloading
 
 Compiled versions of TruthTables will be uploaded to the [Releases](https://github.com/robojamison/truthtables/releases)
-page as they are released. These releases should support most operating system (TruthTables is designed to be as 
-OS-agnostic as possible). Alternatively, you may [clone this repository](https://github.com/robojamison/truthtables.git)
-if you wish to examine the TruthTables source code or compile it for yourself.
+page as they are released. These releases should support most operating systems (TruthTables is designed to be as 
+OS-agnostic as possible). 
+
+Alternatively, you may [clone the repository](https://github.com/robojamison/truthtables.git) if you wish to examine the 
+TruthTables source code or compile it for yourself.
 
 ## Usage
 
 Once you have obtained a copy of TruthTables, simply open a command-line terminal and change into the directory where
-the TruthTables executable is located, then execute `truthtables.exe`/`truthtables.sh`. If you run TruthTables without
-any command-line parameters, it will run interactively and will prompt you for any information it needs.
+the compiled TruthTables binary file is located, then execute it. If you run TruthTables without any command-line 
+parameters, it will run interactively and will prompt you for any information it needs.
 
 If you wish to run TruthTables automatically (instead of interactively), simply append the required parameter switches 
-and their arguments to the TruthTables execution command. The available parameter switches are as follows:
+and their arguments to the TruthTables execution command.
 
-| Switch    | Description                                                          | Argument | Required? | Default |
-| --------- | -------------------------------------------------------------------- | -------- | --------- | ------- |
-| `--debug` | Writes debug information to the console while the program is running | Y/N      | N         | N       |
-| `--input` | The logical statement or statements for the program to evaluate      | string   | Y         | N/A     |
+| Switch    | Description                             | Argument | Required? | Default |
+| --------- | --------------------------------------- | -------- | --------- | ------- |
+| `--debug` | Writes debug information to the console | Y/N      | N         | N       |
+| `--input` | Logical statement to evaluate           | string   | Y         | N/A     |
 
 ## Troubleshooting
 
 TruthTables is still in alpha, and so it is very likely to contain bugs and/or errors. If you encounter a problem with
 TruthTables, first try to diagnose it by taking the following steps:
 
-1. Ensure that your input does not contain any invalid characters. TruthTables recognizes the lower- and upper-case 
+* Ensure that your input does not contain any invalid characters. TruthTables recognizes the lower- and upper-case 
     letters of the English alphabet, as well as the logical operators identified above (and spaces).
 
-2. Ensure that your statement is a valid logical statement. This doesn't mean you have to evaluate it yourself, but do 
+* Ensure that your statement is a valid logical statement. This doesn't mean you have to evaluate it yourself, but do 
     make sure that you didn't enter something like `p ~=^v q`, which is gibberish.
 
-3. Finally, re-run the program with the same input with the `--debug` flag. The debug information that will be printed
+* Finally, re-run the program with the same input with the `--debug` flag. The debug information that will be printed
     to the console may provide a solution to the problem.
 
 If the issue persists, please file a bug report on the [Issues](https://github.com/robojamison/truthtables/issues) page.
+When filing a bug report please be as descriptive as possible, and please follow the Mozilla Developer Network's
+[Bug Writing Guidelines](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines)!
 
 ## License
 
@@ -86,5 +90,5 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 ## Credits
 
 **Jamison Bryant**  
-Lead Developer
+Lead Developer  
 robojamison@gmail.com
