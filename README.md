@@ -45,10 +45,10 @@ parameters, it will run interactively and will prompt you for any information it
 If you wish to run TruthTables automatically (instead of interactively), simply append the required parameter switches 
 and their arguments to the TruthTables execution command.
 
-| Switch    | Description                             | Argument | Required? | Default |
-| --------- | --------------------------------------- | -------- | --------- | ------- |
-| `--debug` | Writes debug information to the console | Y/N      | N         | N       |
-| `--input` | Logical statement to evaluate           | string   | Y         | N/A     |
+| Switch | Description                             | Argument | Required? | Default |
+| ------ | --------------------------------------- | -------- | --------- | ------- |
+| `-d`   | Writes debug information to the console | Y/N      | N         | N       |
+| `-i`   | Logical statement to evaluate           | string   | Y         | N/A     |
 
 ## Troubleshooting
 
